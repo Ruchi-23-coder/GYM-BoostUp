@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BoostUp Gym</title>
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/your-kit-code.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <!-- AOS Animation Library -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+  <!-- Swiper CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" /> 
+</head>
+
+<body class="bg-gray-900 text-white font-sans">
+  
+   <!-- Navbar -->
+   <nav class="flex items-center justify-between px-6 py-4 bg-black text-white relative">
+      <div class="flex items-center space-x-4">
+         <!-- Logo -->
+         <img src="gym18-01.jpg" alt="Logo" class="w-10 h-10 rounded-full" />
+           <span class="text-xl font-bold">BoostUp Gym</span>
+       </div>
+
+      <!-- Toggle Button (Mobile only) -->
+       <button id="menuToggle" class="text-3xl md:hidden focus:outline-none">
+         ☰
+       </button>
+
+      <!-- Navigation Links -->
+       <div id="navLinks"
+         class="hidden flex-col md:flex md:flex-row md:space-x-6 space-y-4 md:space-y-0 bg-black md:bg-transparent absolute md:static top-16 left-0 w-full md:w-auto px-6 py-4 md:p-0 z-40">
+          <a href="#home" class="hover:text-blue-400">Home</a>
+          <a href="#about" class="hover:text-blue-400">About</a>
+          <a href="#services" class="hover:text-blue-400">Services</a>
+          <a href="#gallery" class="hover:text-blue-400">Gallery</a>
+          <a href="#testimonials" class="hover:text-blue-400">Testimonials</a>
+          <a href="#plans" class="hover:text-blue-400">Plans</a>
+          <a href="#contact" class="hover:text-blue-400">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+      <section id="home" class="relative text-white py-20 bg-cover bg-center bg-no-repeat" 
+         style="background-image: url('gym17-01.jpg');">
+          <div class="bg-black bg-opacity-60 p-8 rounded-xl text-center max-w-3xl mx-auto" data-aos="slide-up">
+              <h2 class="text-5xl md:text-6xl font-extrabold mb-4 text-white drop-shadow-lg"
+                 style="transform: perspective(500px) rotateX(10deg);">
+                 BoostUp Gym
+              </h2>
+              <p class="text-xl md:text-2xl mb-6 text-gray-200 font-medium">Join BoostUp Gym to transform your body and mind.</p>
+               <a href="#contact" class="inline-block bg-blue-500 hover:bg-blue-600 text-white px-6 py-3 rounded-full text-lg transition duration-300">
+                 Join Now
+               </a>
+          </div>
+      </section>
+    
+
+   <!-- About Us Section -->
+
+    <section id="about" class="relative h-screen bg-cover bg-center bg-no-repeat flex items-center justify-center py-32 text-white"
+        style="background-image: url('gym16-01.jpg');">
+         <!-- Overlay -->
+           <div class="absolute inset-0 bg-black bg-opacity-70"></div>
+
+             <div class="max-w-6xl mx-auto px-4 md:px-8" data-aos="fade-left">
+               <div class="text-center mb-12">
+                 <h2 class="text-4xl font-bold text-blue-500">About BoostUp Gym</h2>
+                   <p class="text-lg text-gray-300 mt-3">
+                     A space where strength, health, and confidence come together.
+                  </p>
+               </div>
+
+               <div class="grid md:grid-cols-2 gap-10 items-center">
+                <!-- Left: Gym Image -->
+                  <div>
+                     <img src="About-01.jpg"
+                       alt="gym interior"
+                       class="rounded-lg shadow-lg transform hover:scale-105 transition duration-500" />
+                  </div>
+
+                <!-- Right: Description -->
+                 <div data-aos="fade-right">
+                     <h3 class="text-2xl font-semibold text-blue-400 mb-4">Our Mission</h3>
+                      <p class="text-gray-300 mb-6">
+                         To provide world-class training facilities and expert guidance for all fitness levels. We’re here to help you push your limits and achieve your goals.
+                      </p>
+
+                       <h3 class="text-2xl font-semibold text-blue-400 mb-4">Our Vision</h3>
+                         <p class="text-gray-300">
+                             To build a community where people uplift each other through fitness, discipline, and transformation.
+                         </p>
+                   </div>
+              </div>
+           </div>
+     </section>
+
+
+   <!-- Services Section -->
+   
+   <section id="services" class="py-12 bg-black text-white"
+     style="background-image: url('gym15-01.jpg');">
+     <div class="text-center mb-12" data-aos="fade-up">
+        <h2 class="text-4xl font-bold text-blue-500" data-aos="fade-up">Our Services</h2>
+        <p class="text-lg text-gray-300 mt-3">
+          Choose from a wide range of fitness programs designed to fit your goals.
+        </p>
+     </div>   
+
+        <div class="swiper serviceSwiper px-4" data-aos="zoom-in">
+          <div class="swiper-wrapper">
+
+            <!-- Servive 1 -->
+            <div class="swiper-slide bg-cover bg-center rounded-xl p-6 text-center text-blue-400 shadow-lg"
+              style="background-image: url('gym10-01.jpg'); background-blend-mode: multiply; background-color: rgba(0,0,0,0.5);">
+               <i class="fas fa-user-alt"></i>
+                <h3 class="text-xl font-semibold">Personal Training</h3>
+                  <p class="text-gray-400">1-on-1 sessions with certified trainers to help you hit your fitness goals faster and safer.</p>
+            </div>
+
+            <!-- Service 2 -->
+            <div class="swiper-slide bg-cover bg-center rounded-xl p-6 text-center text-blue-400 shadow-lg"
+              style="background-image: url('gym9-01.jpg'); background-blend-mode: multiply; background-color: rgba(0,0,0,0.5);">
+               <i class="fas fa-dumbbell"></i>
+                <h3 class="text-xl font-semibold">Strength Training</h3>
+                  <p class="text-gray-400">Build muscle mass and improve endurance with our specialized strength zones and expert programs.</p>
+            </div>
+
+            <!-- Service 3 -->
+            <div class="swiper-slide bg-cover bg-center rounded-xl p-6 text-center text-blue-400 shadow-lg"
+              style="background-image: url('gym14-01.jpg'); background-blend-mode: multiply; background-color: rgba(0,0,0,0.5);">
+               <i class="fas fa-heartbeat"></i> 
+                <h3 class="text-xl font-semibold">Cardio & Endurance</h3>
+                  <p class="text-gray-400">Boost your stamina and heart health with our high-intensity cardio workouts and guided sessions.</p>
+            </div>
+
+            <!-- Service 4 -->
+            <div class="swiper-slide bg-cover bg-center rounded-xl p-6 text-center text-blue-400 shadow-lg"
+              style="background-image: url('gym16-01.jpg'); background-blend-mode: multiply; background-color: rgba(0,0,0,0.5);">
+               <i class="fas fa-spa"></i>
+                <h3 class="text-xl font-semibold">Yoga & Flexibility</h3>
+                  <p class="text-gray-400">Enhance flexibility and mental well-being through our daily yoga and breathing sessions.</p>
+            </div>
+
+            <!-- Service 5 -->
+            <div class="swiper-slide bg-cover bg-center rounded-xl p-6 text-center text-blue-400 shadow-lg"
+              style="background-image: url('background-01.jpg'); background-blend-mode: multiply; background-color: rgba(0,0,0,0.5);">
+               <i class="fas fa-users"></i>
+                <h3 class="text-xl font-semibold">Group Classes</h3>
+                  <p class="text-gray-400">Stay motivated and have fun while working out in our energetic group fitness classes.</p>
+            </div>
+
+          </div>
+       <div class="swiper-pagination"></div>
+      </div>
+    </section>
+
+
+  <!-- Gallery Section -->
+
+  <section id="gallery" class="py-12 bg-black bg-center text-white"
+    style="background-image: url('gallery-01.jpg');">
+    <h2 class="text-4xl text-center font-bold text-blue-500 mb-12" data-aos="fade-up">Our Gym Gallery</h2>
+
+      <div class="swiper gallerySwiper px-4" data-aos="fade-up">
+         <div class="swiper-wrapper">
+
+          <!-- Image 1 -->
+          <div class="swiper-slide">
+            <img src="gym2-01.jpg" class="rounded-xl shadow-lg w-full h-64 object-cover" alt="Gallery Image 1">
+         </div>
+
+         <!-- Image 2 -->
+         <div class="swiper-slide">
+            <img src="about.jpg" class="rounded-xl shadow-lg w-full h-64 object-cover" alt="Gallery Image 2">
+         </div>
+
+         <!-- Image 3 -->
+         <div class="swiper-slide">
+           <img src="gym1-01.jpg" class="rounded-xl shadow-lg w-full h-64 object-cover" alt="Gallery Image 3">
+         </div>
+
+         <!-- Image 4 -->
+         <div class="swiper-slide">
+           <img src="gallery3-01.jpg" class="rounded-xl shadow-lg w-full h-64 object-cover" alt="Gallery Image 3">
+         </div>
+
+         <!-- Image 5 -->
+         <div class="swiper-slide">
+           <img src="gym3-01.jpg" class="rounded-xl shadow-lg w-full h-64 object-cover" alt="Gallery Image 3">
+         </div>
+
+       </div>
+      <div class="swiper-pagination"></div>
+    </div>
+  </section>
+
+   
+    <!-- Testimonials Section -->
+
+    <section id="testimonials" class="relative h-screen bg-cover bg-center bg-no-repeat flex items-center justify-center py-32 text-white"
+       style="background-image: url('login-01.jpg');">
+       <!-- Overlay -->
+       <div class="absolute inset-0 bg-black bg-opacity-70"></div> 
+
+            <div class="max-w-6xl mx-auto px-4 md:px-8" data-aos="zoom-in-up">
+                <div class="text-center mb-12">
+                    <h2 class="text-4xl font-bold text-blue-500">What Our Members Say</h2>
+                    <p class="text-lg text-gray-300 mt-3">Real experiences from real people.</p>
+                </div>
+
+                <div class="grid md:grid-cols-3 gap-8">
+                   <!-- Testimonial 1 -->
+                   <div class="bg-gray-900 p-6 rounded-xl shadow-lg hover:shadow-blue-500/40 transition">
+                        <p class="text-gray-300 mb-4">"BoostUp Gym has transformed my fitness journey! The trainers are so motivating."</p>
+                            <div class="font-semibold text-blue-400">– Aakash Mehra</div>
+                   </div>
+
+                   <!-- Testimonial 2 -->
+                   <div class="bg-gray-900 p-6 rounded-xl shadow-lg hover:shadow-blue-500/40 transition">
+                        <p class="text-gray-300 mb-4">"I love the group classes and the energy here. It’s now a daily part of my life."</p>
+                            <div class="font-semibold text-blue-400">– Riya Sharma</div>
+                   </div>
+
+                   <!-- Testimonial 3 -->
+                   <div class="bg-gray-900 p-6 rounded-xl shadow-lg hover:shadow-blue-500/40 transition">
+                        <p class="text-gray-300 mb-4">"Great equipment, expert trainers, and positive vibes. Highly recommend BoostUp!"</p>
+                            <div class="font-semibold text-blue-400">– Karan Joshi</div>
+                   </div>
+                </div>
+            </div>
+    </section>
+
+  <!-- Our Plans -->
+
+  <section id="plans" class="py-16 bg-black bg-center text-white"
+    style="background-image: url('testimonials-01.jpg');">
+
+    <h2 class="text-4xl text-center text-yellow-400 font-bold mb-10" data-aos="fade-up">Our Plans</h2>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 px-6 md:px-20" data-aos="fade-up">
+
+    <!-- Monthly Plan -->
+      <div class="bg-gradient-to-br from-gray-800 to-gray-900 rounded-xl p-6 shadow-lg hover:scale-105 transition-all duration-300 text-center border-2 border-yellow-400">
+        <h3 class="text-2xl font-semibold mb-4">Monthly Plan</h3>
+        <p class="text-4xl font-bold text-yellow-400 mb-4">₹1,499</p>
+        <ul class="space-y-2 mb-6">
+          <li>✅ Access to all equipment</li>
+          <li>✅ Group fitness classes</li>
+          <li>✅ Locker & shower facility</li>
+       </ul>
+       <a href="#contact" class="bg-yellow-500 hover:bg-yellow-600 text-black font-bold py-2 px-6 rounded-full">
+         Join Now</a>
+     </div>
+
+     <!-- Quarterly Plan -->
+       <div class="bg-gradient-to-br from-gray-800 to-gray-900 rounded-xl p-6 shadow-lg hover:scale-105 transition-all duration-300 text-center border-2 border-yellow-400">
+         <h3 class="text-2xl font-semibold mb-4">Quarterly Plan</h3>
+         <p class="text-4xl font-bold text-yellow-400 mb-4">₹3,999</p>
+         <ul class="space-y-2 mb-6">
+           <li>✅ Personal training sessions</li>
+           <li>✅ Diet consultation</li>
+           <li>✅ All monthly benefits</li>
+         </ul>
+         <a href="#contact" class="bg-yellow-500 hover:bg-yellow-600 text-black font-bold py-2 px-6 rounded-full">Join Now</a>
+       </div>
+
+      <!-- Yearly Plan -->
+        <div class="bg-gradient-to-br from-gray-800 to-gray-900 rounded-xl p-6 shadow-lg hover:scale-105 transition-all duration-300 text-center border-2 border-yellow-400">
+          <h3 class="text-2xl font-semibold mb-4">Yearly Plan</h3>
+          <p class="text-4xl font-bold text-yellow-400 mb-4">₹11,999</p>
+          <ul class="space-y-2 mb-6">
+            <li>✅ Free merchandise kit</li>
+            <li>✅ Monthly progress tracking</li>
+            <li>✅ All quarterly benefits</li>
+          </ul>
+          <a href="#contact" class="bg-yellow-500 hover:bg-yellow-600 text-black font-bold py-2 px-6 rounded-full">Join Now</a>
+       </div>
+
+    </div>
+  </section>
+ 
+    
+    <!-- Contact Section -->
+    <section id="contact" class="relative h-screen bg-cover bg-center bg-no-repeat flex items-center justify-center py-32 text-white"
+        style="background-image: url('gym11-01.jpg');">
+        <!-- Overlay -->
+        <div class="absolute inset-0 bg-black bg-opacity-70"></div> 
+
+            <div class="max-w-6xl mx-auto px-4 md:px-8" data-aos="zoom-in-up">
+                <div class="text-center mb-12">
+                    <h2 class="text-4xl font-bold text-blue-500">Get In Touch</h2>
+                    <p class="text-lg text-gray-300 mt-3">We'd love to hear from you. Send us a message!</p>
+                </div>
+
+                <form class="max-w-3xl mx-auto bg-gray-800 p-6 rounded-xl space-y-4">
+                    <div class="grid md:grid-cols-2 gap-4">
+                        <input type="text" placeholder="Your Name" class="p-3 bg-gray-700 rounded w-full outline-none text-white" required>
+                        <input type="email" placeholder="Your Email" class="p-3 bg-gray-700 rounded w-full outline-none text-white" required>
+                   </div>
+                        <input type="text" placeholder="Subject" class="p-3 bg-gray-700 rounded w-full outline-none text-white" required>
+                        <textarea rows="5" placeholder="Your Message" class="p-3 bg-gray-700 rounded w-full outline-none text-white" required></textarea>
+                        <button type="submit" class="bg-blue-500 hover:bg-blue-600 text-white py-3 px-6 rounded">
+                            Send Message
+                        </button>
+                </form>
+            </div>
+    </section>
+
+
+    <!-- Contact Info Section -->
+    <section class="bg-gray-800 py-12 text-white">
+        <div class="max-w-5xl mx-auto px-4" data-aos="zoom-in-up">
+            <div class="grid md:grid-cols-2 gap-10 text-center md:text-left">
+
+              <!-- Contact Details -->
+              <div class="space-y-4">
+                <h3 class="text-2xl font-bold text-blue-500 mb-4">Contact Information</h3>
+                <p> <a href="https://maps.app.goo.gl/fHQZAZsLdv46PHVT9?g_st=ac" target="_blank" class="text-blue-400 hover:text-red-500 transiti on">
+                    <i class="fas fa-map-marker-alt text-blue-400 mr-2"></i></a> Krishna Nagar, Kurukshetra, Haryana 136118</p>
+                <p><i class="fas fa-envelope text-blue-400 mr-2"></i> contact@boostupgym.com</p>
+                <p><i class="fas fa-phone text-blue-400 mr-2"></i> +91 90345-42004</p>
+             </div>
+
+             <!-- Social Media -->
+             <div class="space-y-4">
+                <h3 class="text-2xl font-bold text-blue-500 mb-4">Follow Us</h3>
+                    <div class="flex justify-center md:justify-start space-x-6 text-2xl">
+                        <a href="https://www.instagram.com/boostupgymofficial?igsh=MXEweXIxdG50NzduMw==" target="_blank" class="text-blue-400 hover:text-pink-500 transition">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://facebook.com" target="_blank" class="text-blue-400 hover:text-blue-600 transition">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="https://twitter.com" target="_blank" class="text-blue-400 hover:text-blue-400 transition">
+                            <i class="fab fa-x-twitter"></i>
+                        </a>
+                        <a href="https://youtube.com" target="_blank" class="text-blue-400 hover:text-red-500 transiti on">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+         </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 py-6 text-center text-gray-400">
+        <p>&copy; <span id="year"></span> BoostUp Gym. All rights reserved.</p>
+    </footer>
+
+   <script>
+     // Auto update year
+     document.getElementById("year").textContent = new Date().getFullYear();
+   </script>
+
+   <!-- Back to Top Button -->
+    <button id="backToTop" class="fixed bottom-5 right-5 bg-blue-500 hover:bg-blue-600 text-white p-3 rounded-full shadow-lg hidden z-50">
+      <i class="fas fa-arrow-up"></i>
+   </button>
+
+   <script>
+        const backToTop = document.getElementById("backToTop");
+
+        window.addEventListener("scroll", () => {
+             if (window.scrollY > 300) {
+                backToTop.classList.remove("hidden");
+            } else {
+                backToTop.classList.add("hidden");
+            }
+        });
+
+        backToTop.addEventListener("click", () => {
+            window.scrollTo({ top: 0, behavior: "smooth" });
+        });
+   </script>
+
+   <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const toggleBtn = document.getElementById('menuToggle');
+            const navLinks = document.getElementById('navLinks');
+
+            toggleBtn.addEventListener('click', () => {
+              navLinks.classList.toggle('hidden');
+            });
+        });
+   </script>
+
+
+   <!-- AOS Animation Init -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: true,
+            easing: 'ease-in-out',
+       });
+   </script>
+
+   <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+      const swiper = new Swiper(".mySwiper",{
+        spaceBetween: 20,
+        loop: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        breakpoints: {
+          640: {
+            slidesPerview: 1,
+          },
+          768: {
+            slidesPerview: 2,
+          },
+          1024: {
+            slidesPerview: 3,
+          },
+        },
+      });
+    </script>
+
+    <script>
+      const serviceSwiper = new Swiper(".serviceSwiper", {
+        loop: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        spaceBetween: 20,
+        breakpoints: {
+          640: { slidesPerView: 1 },
+          768: { slidesPerView: 2 },
+          1024: { slidesPerView: 3 },
+        },
+      });
+
+      const gallerySwiper = new Swiper(".gallerySwiper", {
+        loop: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        spaceBetween: 20,
+        breakpoints: {
+          640: { slidesPerView: 1 },
+          768: { slidesPerView: 2 },
+          1024: { slidesPerView: 3 },
+        },
+      });
+   </script>
+
+</body>
+  
+</html
